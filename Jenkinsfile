@@ -25,6 +25,10 @@ pipeline {
 //
   triggers { pollSCM('*/1 * * * *') }
 
+  tools {
+    maven 'maven'
+  }
+
   stages {
 
     stage('Compile') {
